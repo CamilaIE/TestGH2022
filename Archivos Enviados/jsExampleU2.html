@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio con Javascript U2</title>
+</head>
+<body>
+    <script>
+        
+        var alumno = prompt("Ingrese nombre del alumno");
+
+        if(alumno != null && alumno != "")
+        {
+            var nota1 = parseFloat( prompt("Ingresa 1era nota del alumno") );
+            var nota2 = parseFloat( prompt("Ingresa 2da nota del alumno") );        
+            var nota3 = parseFloat( prompt("Ingresa 3era nota del alumno") );
+
+            alert("El promedio de " + alumno + " es de " + ((nota1 + nota2 + nota3) / 3));
+        }
+        else
+        {
+            alert("Nombre de alumno nulo. Carge nuevamente la página.");
+        }
+    </script>
+</body>
+</html>
